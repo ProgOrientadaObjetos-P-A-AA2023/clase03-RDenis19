@@ -5,21 +5,28 @@
  */
 package manejoclases01;
 
-
 public class Ejecutable {
+
     public static void main(String[] args) {
         // Se crea un objeto
         Hospital hospital = new Hospital();
-        
+
         // Se asigna valores particulares al objeto
         hospital.nombre = "Isidro Ayora";
         hospital.numeroCamas = 100;
         hospital.presupuesto = 560340.43;
-        
+
         // Se presenta valores en pantalla
-        System.out.printf("%s - %d - %.1f\n", hospital.nombre,
+        System.out.printf("%s - %d - %d - %.1f\n", hospital.nombre,
                 hospital.numeroCamas, hospital.presupuesto);
-        
+
         // System.out.println(hospital.nombre + "-" + hospital.numeroCamas);
+        //UN OBJETO DE TIPO HOSPITAL 
+        Hospital hospitalLoja = new Hospital();
+        hospitalLoja.nombre = "Denis";
+        hospitalLoja.numeroCamas = 200;
+        hospitalLoja.presupuesto = 514787.43;
+        System.out.printf("%s - %d - %d - %.1f\n", hospitalLoja.nombre,
+                hospitalLoja.numeroCamas, hospitalLoja.presupuesto);
     }
 }
