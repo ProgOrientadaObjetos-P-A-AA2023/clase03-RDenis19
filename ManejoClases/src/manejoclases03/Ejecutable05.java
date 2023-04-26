@@ -26,8 +26,10 @@ public class Ejecutable05 {
         miHospital.establecerNumeroCamas(camas);
         miHospital.establecerPresupuesto(presupuesto);
         
-        System.out.printf("Nombre:%s - Numero de Camas:%d - Presupuesto:%.2f\n", miHospital.obtenerNombre(), 
-                miHospital.obtenerNumeroCamas(), miHospital.obtenerPresupuesto());
+        System.out.printf("Nombre: %s - Numero de Camas: %d - Presupuesto: "
+                + "%.2f\n", miHospital.obtenerNombre(), 
+                miHospital.obtenerNumeroCamas(),
+                miHospital.obtenerPresupuesto());
         
     }
 }
